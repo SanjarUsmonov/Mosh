@@ -11,13 +11,13 @@
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 body {
-  background: rgb(199, 62, 197);
+  background: red;
 }
 
 nav {
@@ -35,7 +35,7 @@ nav .navbar .site-link {
   position: relative;
   justify-content: space-between;
 }
-nav .navbar .site-link a {
+nav .navbar .site-link .link {
   font-size: 15px;
   font-family: "Roboto";
   text-decoration: none;
@@ -43,8 +43,20 @@ nav .navbar .site-link a {
   transition: 0.5s;
   color: #707070;
 }
-nav .navbar .site-link a:hover {
+nav .navbar .site-link .link:hover {
   color: black;
+}
+nav .navbar .site-link .btn {
+  justify-content: center;
+  background-color: #A046D3;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 90px;
+  height: 40px;
+}
+nav .navbar .site-link .btn:hover {
+  color: #ffffff;
+  background: rgb(156, 37, 183);
 }
 nav .navbar .site-link span {
   font-size: 15px;
@@ -60,8 +72,8 @@ nav .navbar .site-link .drop {
   height: 64px;
   border-radius: 0 0 5px 5px;
   position: absolute;
-  top: 40px;
-  right: 150px;
+  top: 51px;
+  right: 170px;
   background-color: #ffffff;
   list-style-type: none;
 }
