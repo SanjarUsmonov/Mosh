@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 $grey: #707070;
@@ -12,7 +13,6 @@ $black: #000000;
 $purple: #211c51;
 $blue: #212338;
 $pink: #A046D3;
-$fontFamily: 'Roboto';
 
 .flex {
     display: flex;
@@ -26,7 +26,7 @@ $fontFamily: 'Roboto';
 }
 
 body {
-    background: red;
+    background: linear-gradient(left, #7250d5, #aa47a5 50%, #f43a67 99%);
 }
 
 nav {
@@ -34,6 +34,7 @@ nav {
     height: 60px;
     position: fixed;
     top: 0;
+    z-index: 100;
     background-color: $white;
 
     .navbar {
@@ -46,7 +47,6 @@ nav {
 
             .link {
                 font-size: 15px;
-                font-family: 'Roboto';
                 text-decoration: none;
                 text-transform: capitalize;
                 transition: 0.5s;
@@ -74,7 +74,6 @@ nav {
 
             span {
                 font-size: 15px;
-                font-family: 'Roboto';
                 text-decoration: none;
                 text-transform: capitalize;
                 transition: 0.5s;
@@ -103,4 +102,44 @@ nav {
         }
     }
 
+}
+
+main {
+    .hero {
+        background: rgb(141, 86, 209);
+        background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647400757178) 27%, rgba(236, 73, 112, 0.7514356084230567) 67%, rgba(231, 64, 146, 1) 67%);
+        margin-top: 60px;
+        width: 100%;
+        height: 500px;
+
+        .content {
+            flex-direction: column;
+
+            h1 {
+                width: 900px;
+                font-size: 44px;
+                font-weight: 700;
+                text-align: center;
+                color: $white;
+                line-height: 51px;
+                margin-top: 100px;
+            }
+
+            .video {
+                z-index: 10;
+            }
+        }
+    }
+
+    .g {
+        background-color: $white;
+        margin-top: 50px;
+        margin: 0 auto;
+        rotate: -1deg;
+        margin-top: -30px;
+        width: 99.95%;
+        overflow-x: auto;
+        height: 100px;
+        box-sizing: inherit;
+    }
 }

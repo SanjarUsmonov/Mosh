@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 .flex {
@@ -17,7 +18,7 @@
 }
 
 body {
-  background: red;
+  background: linear-gradient(left, #7250d5, #aa47a5 50%, #f43a67 99%);
 }
 
 nav {
@@ -25,6 +26,7 @@ nav {
   height: 60px;
   position: fixed;
   top: 0;
+  z-index: 100;
   background-color: #ffffff;
 }
 nav .navbar {
@@ -37,7 +39,6 @@ nav .navbar .site-link {
 }
 nav .navbar .site-link .link {
   font-size: 15px;
-  font-family: "Roboto";
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.5s;
@@ -60,7 +61,6 @@ nav .navbar .site-link .btn:hover {
 }
 nav .navbar .site-link span {
   font-size: 15px;
-  font-family: "Roboto";
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.5s;
@@ -83,4 +83,38 @@ nav .navbar .site-link .more:hover > .drop {
   flex-direction: column;
   padding: 0 25px;
   line-height: 25px;
+}
+
+main .hero {
+  background: rgb(141, 86, 209);
+  background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647401) 27%, rgba(236, 73, 112, 0.7514356084) 67%, rgb(231, 64, 146) 67%);
+  margin-top: 60px;
+  width: 100%;
+  height: 500px;
+}
+main .hero .content {
+  flex-direction: column;
+}
+main .hero .content h1 {
+  width: 900px;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  line-height: 51px;
+  margin-top: 100px;
+}
+main .hero .content .video {
+  z-index: 10;
+}
+main .g {
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin: 0 auto;
+  rotate: -1deg;
+  margin-top: -30px;
+  width: 99.95%;
+  overflow-x: auto;
+  height: 100px;
+  box-sizing: inherit;
 }/*# sourceMappingURL=style.css.map */
