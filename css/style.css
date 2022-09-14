@@ -104,6 +104,10 @@ main .hero .content h1 {
   line-height: 51px;
   margin-top: 90px;
 }
+main .hero .content h2 {
+  font-size: 30px;
+  color: #212338;
+}
 main .hero .content h4 {
   padding: 20px 0;
   background: rgb(141, 86, 209);
@@ -117,9 +121,38 @@ main .hero .content h4 {
 main .hero .content h4 i {
   padding: 0 8px;
 }
+main .hero .content p {
+  width: 650px;
+  font-size: 18px;
+  color: #212338;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 20px;
+}
 main .hero .content .video {
   z-index: 10;
   margin-top: 50px;
+}
+main .boxes {
+  width: 800px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: rgb(141, 86, 209);
+  background: linear-gradient(105deg, rgb(101, 98, 235) 27%, rgb(232, 92, 235) 67%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .boxes .box {
+  flex-direction: column;
+  margin: 100px 0;
+}
+main .boxes .box h1 {
+  font-size: 40px;
+}
+main .boxes .box p {
+  font-size: 14px;
+  color: #000000;
 }
 main .g {
   background-color: #ffffff;
@@ -131,4 +164,223 @@ main .g {
   overflow-x: auto;
   height: 100px;
   box-sizing: inherit;
+}
+main .main {
+  justify-content: center;
+  flex-direction: column;
+}
+main .main h2 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #212338;
+}
+main .main p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #212338;
+  line-height: 20px;
+  padding-top: 40px;
+}
+main .main .video {
+  margin-top: 80px;
+}
+
+.cards {
+  margin-top: 100px;
+  justify-content: space-between;
+  width: 820px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.cards .card {
+  margin-top: 50px;
+  width: 385px;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px #f0f0f0;
+}
+.cards .card p {
+  font-size: 16px;
+  color: #212338;
+  padding: 15px 30px;
+  line-height: 28px;
+}
+.cards .card .profil {
+  width: 280px;
+  padding: 10px 30px;
+  justify-content: space-between;
+}
+.cards .card .profil img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.cards .card .profil .asosiy {
+  width: 150px;
+}
+.cards .card .profil .asosiy h5 {
+  font-size: 16px;
+  color: #212338;
+}
+.cards .card .profil .asosiy a {
+  font-size: 14px;
+  color: #707070;
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+  .container {
+    max-width: 940px;
+  }
+  main .hero {
+    width: 100%;
+    height: 500px;
+  }
+  main .hero .content {
+    flex-direction: column;
+  }
+  main .hero .content h1 {
+    max-width: 900px;
+    width: 100%;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    line-height: 51px;
+    margin-top: 90px;
+  }
+  main .hero .content h2 {
+    font-size: 30px;
+    color: #212338;
+  }
+  main .hero .content h4 {
+    padding: 20px 0;
+    background: rgb(141, 86, 209);
+    background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647401) 27%, rgba(236, 73, 112, 0.7514356084) 67%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  main .hero .content h4 i {
+    padding: 0 8px;
+  }
+  main .hero .content p {
+    width: 650px;
+    font-size: 18px;
+    color: #212338;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  main .hero .content .video {
+    z-index: 10;
+    margin-top: 50px;
+  }
+  main .boxes {
+    width: 700px;
+  }
+  main .boxes .box {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  main .main {
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .main h2 {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 769px) and (max-width: 920px) {
+  .container {
+    max-width: 840px;
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff;
+  }
+  nav .navbar {
+    width: 800px;
+    justify-content: space-between;
+  }
+  nav .navbar .site-link {
+    width: 650px;
+    position: relative;
+    justify-content: space-between;
+  }
+  nav .navbar main .hero {
+    width: 100%;
+    height: 500px;
+  }
+  nav .navbar main .hero .content {
+    flex-direction: column;
+  }
+  nav .navbar main .hero .content h1 {
+    max-width: 800px;
+    width: 100%;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    line-height: 51px;
+    margin-top: 90px;
+  }
+  nav .navbar main .hero .content h2 {
+    font-size: 30px;
+    color: #212338;
+  }
+  nav .navbar main .hero .content h4 {
+    padding: 20px 0;
+    background: rgb(141, 86, 209);
+    background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647401) 27%, rgba(236, 73, 112, 0.7514356084) 67%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  nav .navbar main .hero .content h4 i {
+    padding: 0 8px;
+  }
+  nav .navbar main .hero .content p {
+    width: 650px;
+    font-size: 18px;
+    color: #212338;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  nav .navbar main .hero .content .video {
+    z-index: 10;
+    margin-top: 50px;
+  }
+  nav .navbar main .boxes {
+    width: 600px;
+  }
+  nav .navbar main .boxes .box {
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  nav .navbar main .main {
+    justify-content: center;
+    flex-direction: column;
+  }
+  nav .navbar main .main h2 {
+    margin-top: 50px;
+  }
+  .cards {
+    width: 800px;
+    margin-top: 100px;
+  }
+  .cards .card {
+    height: 300px;
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

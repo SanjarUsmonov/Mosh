@@ -125,6 +125,11 @@ main {
                 margin-top: 90px;
             }
 
+            h2 {
+                font-size: 30px;
+                color: $blue;
+            }
+
             h4 {
                 padding: 20px 0;
                 background: rgb(141, 86, 209);
@@ -139,9 +144,44 @@ main {
                 }
             }
 
+            p {
+                width: 650px;
+                font-size: 18px;
+                color: $blue;
+                font-weight: 400;
+                line-height: 30px;
+                margin-top: 20px;
+            }
+
             .video {
                 z-index: 10;
                 margin-top: 50px;
+            }
+
+
+        }
+    }
+
+    .boxes {
+        width: 800px;
+        justify-content: space-between;
+        margin: 0 auto;
+        background: rgb(141, 86, 209);
+        background: linear-gradient(105deg, rgb(101, 98, 235) 27%, rgb(232, 92, 235) 67%, );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        .box {
+            flex-direction: column;
+            margin: 100px 0;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $black;
             }
         }
     }
@@ -156,5 +196,276 @@ main {
         overflow-x: auto;
         height: 100px;
         box-sizing: inherit;
+    }
+
+    .main {
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            color: $blue;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: $blue;
+            line-height: 20px;
+            padding-top: 40px;
+        }
+
+        .video {
+            margin-top: 80px;
+        }
+    }
+}
+
+.cards {
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 820px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .card {
+        margin-top: 50px;
+        width: 385px;
+        height: 250px;
+        background-color: $white;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 10px #f0f0f0;
+
+        p {
+            font-size: 16px;
+            color: $blue;
+            padding: 15px 30px;
+            line-height: 28px;
+        }
+
+        .profil {
+            width: 280px;
+            padding: 10px 30px;
+            justify-content: space-between;
+
+            img {
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+            }
+
+            .asosiy {
+                width: 150px;
+
+                h5 {
+                    font-size: 16px;
+                    color: $blue;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:921px) and (max-width:1200px) {
+    .container {
+        max-width: 940px;
+    }
+
+    main {
+        .hero {
+            width: 100%;
+            height: 500px;
+
+            .content {
+                flex-direction: column;
+
+                h1 {
+                    max-width: 900px;
+                    width: 100%;
+                    font-size: 44px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: $white;
+                    line-height: 51px;
+                    margin-top: 90px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                    color: $blue;
+                }
+
+                h4 {
+                    padding: 20px 0;
+                    background: rgb(141, 86, 209);
+                    background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647400757178) 27%, rgba(236, 73, 112, 0.7514356084230567) 67%, );
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    i {
+                        padding: 0 8px;
+                    }
+                }
+
+                p {
+                    width: 650px;
+                    font-size: 18px;
+                    color: $blue;
+                    font-weight: 400;
+                    line-height: 30px;
+                    margin-top: 20px;
+                }
+
+                .video {
+                    z-index: 10;
+                    margin-top: 50px;
+                }
+
+
+            }
+        }
+
+        .boxes {
+            width: 700px;
+
+            .box {
+                flex-direction: column;
+                margin: 50px 0;
+            }
+        }
+
+        .main {
+            justify-content: center;
+            flex-direction: column;
+
+            h2 {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:920px) {
+    .container {
+        max-width: 840px;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: $white;
+
+        .navbar {
+            width: 800px;
+            justify-content: space-between;
+
+            .site-link {
+                width: 650px;
+                position: relative;
+                justify-content: space-between;
+
+
+
+            }
+
+            main {
+
+                .hero {
+                    width: 100%;
+                    height: 500px;
+
+                    .content {
+                        flex-direction: column;
+
+                        h1 {
+                            max-width: 800px;
+                            width: 100%;
+                            font-size: 44px;
+                            font-weight: 500;
+                            text-align: center;
+                            color: $white;
+                            line-height: 51px;
+                            margin-top: 90px;
+                        }
+
+                        h2 {
+                            font-size: 30px;
+                            color: $blue;
+                        }
+
+                        h4 {
+                            padding: 20px 0;
+                            background: rgb(141, 86, 209);
+                            background: linear-gradient(105deg, rgba(141, 86, 209, 0.8242647400757178) 27%, rgba(236, 73, 112, 0.7514356084230567) 67%, );
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            font-size: 18px;
+                            font-weight: 400;
+
+                            i {
+                                padding: 0 8px;
+                            }
+                        }
+
+                        p {
+                            width: 650px;
+                            font-size: 18px;
+                            color: $blue;
+                            font-weight: 400;
+                            line-height: 30px;
+                            margin-top: 20px;
+                        }
+
+                        .video {
+                            z-index: 10;
+                            margin-top: 50px;
+                        }
+
+
+                    }
+                }
+
+                .boxes {
+                    width: 600px;
+
+                    .box {
+                        flex-direction: column;
+                        margin: 50px 0;
+                    }
+                }
+
+
+                .main {
+                    justify-content: center;
+                    flex-direction: column;
+
+                    h2 {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cards {
+        width: 800px;
+        margin-top: 100px;
+
+        .card {
+            height: 300px;
+            margin-top: 30px;
+        }
     }
 }
