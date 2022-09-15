@@ -32,6 +32,9 @@ nav {
 nav .navbar {
   justify-content: space-between;
 }
+nav .navbar input {
+  display: none;
+}
 nav .navbar .unusefull {
   display: none;
 }
@@ -229,4 +232,428 @@ main .main .video {
 .cards .card .profil .asosiy a {
   font-size: 14px;
   color: #707070;
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar input {
+    display: none;
+  }
+  main .hero {
+    margin-top: 60px;
+    width: 100%;
+    height: 500px;
+  }
+  main .hero .content {
+    flex-direction: column;
+  }
+  main .hero .content h1 {
+    width: 900px;
+    font-size: 44px;
+    margin-top: 90px;
+  }
+  main .hero .content h2 {
+    font-size: 30px;
+  }
+  main .hero .content h4 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  main .hero .content h4 i {
+    padding: 0 8px;
+  }
+  main .hero .content p {
+    width: 650px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  main .hero .content .video {
+    margin-top: 50px;
+  }
+  main .boxes {
+    width: 700px;
+  }
+  main .boxes .box {
+    margin: 50px 0;
+  }
+  main .boxes .box h1 {
+    font-size: 40px;
+  }
+  main .boxes .box p {
+    font-size: 14px;
+  }
+  main .g {
+    margin-top: 50px;
+    margin: 0 auto;
+    rotate: -1deg;
+    margin-top: -30px;
+    width: 99.95%;
+    height: 100px;
+  }
+  main .main h2 {
+    font-size: 26px;
+  }
+  main .main p {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  main .main .video {
+    margin-top: 80px;
+  }
+  .cards {
+    margin-top: 100px;
+    width: 820px;
+  }
+  .cards .card {
+    margin-top: 50px;
+    width: 385px;
+    height: 250px;
+  }
+  .cards .card p {
+    font-size: 16px;
+  }
+  .cards .card .profil {
+    width: 280px;
+    padding: 10px 30px;
+  }
+  .cards .card .profil img {
+    width: 48px;
+    height: 48px;
+  }
+  .cards .card .profil .asosiy {
+    width: 150px;
+  }
+  .cards .card .profil .asosiy h5 {
+    font-size: 16px;
+  }
+  .cards .card .profil .asosiy a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 900px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav .none {
+    display: none;
+  }
+  nav .navbar .unusefull {
+    display: block;
+  }
+  nav .navbar input {
+    display: none;
+  }
+  nav .navbar i {
+    font-size: 30px;
+    color: #707070;
+  }
+  nav .navbar label {
+    z-index: 100;
+  }
+  nav .navbar .div-nav {
+    right: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    transition: 0.5s;
+  }
+  nav .navbar #burger:checked ~ .div-nav {
+    right: 0;
+  }
+  nav .navbar .div-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .navbar .menu-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    background-color: #000;
+    overflow: auto;
+  }
+  nav .navbar .contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .navbar .contacts a {
+    line-height: 70px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  main .hero {
+    margin-top: 60px;
+    width: 900px;
+    height: 500px;
+  }
+  main .hero .content {
+    flex-direction: column;
+  }
+  main .hero .content h1 {
+    width: 850px;
+    font-size: 44px;
+    margin-top: 90px;
+  }
+  main .hero .content h2 {
+    font-size: 30px;
+  }
+  main .hero .content h4 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  main .hero .content h4 i {
+    padding: 0 8px;
+  }
+  main .hero .content p {
+    width: 650px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  main .hero .content .video {
+    margin-top: 50px;
+  }
+  main .boxes {
+    width: 700px;
+  }
+  main .boxes .box {
+    margin: 50px 0;
+  }
+  main .boxes .box h1 {
+    font-size: 40px;
+  }
+  main .boxes .box p {
+    font-size: 14px;
+  }
+  main .g {
+    margin-top: 50px;
+    margin: 0 auto;
+    rotate: -1deg;
+    margin-top: -30px;
+    width: 99.95%;
+    height: 100px;
+  }
+  main .main h2 {
+    font-size: 26px;
+  }
+  main .main p {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  main .main .video {
+    margin-top: 80px;
+  }
+  .cards {
+    margin-top: 100px;
+    width: 800px;
+  }
+  .cards .card {
+    margin-top: 30px;
+    width: 385px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cards .card p {
+    font-size: 16px;
+  }
+  .cards .card .profil {
+    width: 280px;
+    padding: 10px 30px;
+  }
+  .cards .card .profil img {
+    width: 48px;
+    height: 48px;
+  }
+  .cards .card .profil .asosiy {
+    width: 150px;
+  }
+  .cards .card .profil .asosiy h5 {
+    font-size: 16px;
+  }
+  .cards .card .profil .asosiy a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav .none {
+    display: none;
+  }
+  nav .navbar {
+    width: 600px;
+    margin: 0 auto;
+  }
+  nav .navbar .unusefull {
+    display: block;
+  }
+  nav .navbar input {
+    display: none;
+  }
+  nav .navbar i {
+    font-size: 30px;
+    color: #707070;
+  }
+  nav .navbar label {
+    z-index: 100;
+  }
+  nav .navbar .div-nav {
+    right: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    transition: 0.5s;
+  }
+  nav .navbar #burger:checked ~ .div-nav {
+    right: 0;
+  }
+  nav .navbar .div-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .navbar .menu-bar {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    display: flex;
+    background-color: #000;
+    overflow: auto;
+  }
+  nav .navbar .contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav .navbar .contacts a {
+    line-height: 70px;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+  main {
+    width: 768px;
+  }
+  main .hero {
+    margin-top: 60px;
+    width: 768px;
+    height: 300px;
+  }
+  main .hero .content {
+    flex-direction: column;
+  }
+  main .hero .content h1 {
+    width: 600px;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  main .hero .content h2 {
+    font-size: 30px;
+  }
+  main .hero .content h4 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  main .hero .content h4 i {
+    padding: 0 8px;
+  }
+  main .hero .content p {
+    max-width: 640px;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  main .hero .content .video {
+    margin-top: 50px;
+    width: 280px;
+    height: 170px;
+  }
+  main .boxes {
+    width: 650px;
+  }
+  main .boxes .box {
+    margin: 30px 0;
+  }
+  main .boxes .box h1 {
+    font-size: 40px;
+  }
+  main .boxes .box p {
+    font-size: 14px;
+  }
+  main .g {
+    margin-top: 50px;
+    margin: 0 auto;
+    rotate: -1deg;
+    margin-top: -30px;
+    width: 99.95%;
+    height: 100px;
+  }
+  main .main h2 {
+    font-size: 26px;
+  }
+  main .main p {
+    font-size: 18px;
+    padding-top: 40px;
+  }
+  main .main .rasm {
+    width: 100%;
+    height: 370px;
+    margin-top: 50px;
+  }
+  .cards {
+    margin-top: 100px;
+    width: 700px;
+    flex-direction: column;
+  }
+  .cards .card {
+    margin-top: 30px;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .cards .card p {
+    font-size: 16px;
+  }
+  .cards .card .profil {
+    width: 280px;
+    padding: 10px 30px;
+  }
+  .cards .card .profil img {
+    width: 48px;
+    height: 48px;
+  }
+  .cards .card .profil .asosiy {
+    width: 150px;
+  }
+  .cards .card .profil .asosiy h5 {
+    font-size: 16px;
+  }
+  .cards .card .profil .asosiy a {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

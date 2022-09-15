@@ -40,6 +40,10 @@ nav {
     .navbar {
         justify-content: space-between;
 
+        input {
+            display: none;
+        }
+
         .unusefull {
             display: none;
         }
@@ -270,6 +274,555 @@ main {
                 a {
                     font-size: 14px;
                     color: $grey;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:901px) and (max-width:1200px) {
+    .container {
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        input {
+            display: none;
+        }
+    }
+
+    main {
+        .hero {
+            margin-top: 60px;
+            width: 100%;
+            height: 500px;
+
+            .content {
+                flex-direction: column;
+
+                h1 {
+                    width: 900px;
+                    font-size: 44px;
+                    margin-top: 90px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    padding: 20px 0;
+                    font-size: 18px;
+
+                    i {
+                        padding: 0 8px;
+                    }
+                }
+
+                p {
+                    width: 650px;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+
+                .video {
+                    margin-top: 50px;
+                }
+
+
+            }
+        }
+
+        .boxes {
+            width: 700px;
+
+            .box {
+                margin: 50px 0;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .g {
+            margin-top: 50px;
+            margin: 0 auto;
+            rotate: -1deg;
+            margin-top: -30px;
+            width: 99.95%;
+            height: 100px;
+        }
+
+        .main {
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 18px;
+                padding-top: 40px;
+            }
+
+            .video {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    .cards {
+        margin-top: 100px;
+        width: 820px;
+
+        .card {
+            margin-top: 50px;
+            width: 385px;
+            height: 250px;
+
+            p {
+                font-size: 16px;
+            }
+
+            .profil {
+                width: 280px;
+                padding: 10px 30px;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .asosiy {
+                    width: 150px;
+
+                    h5 {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:900px) {
+    .container {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    nav {
+        .none {
+            display: none;
+        }
+
+        .navbar {
+            .unusefull {
+                display: block;
+            }
+
+            input {
+                display: none;
+            }
+
+            i {
+                font-size: 30px;
+                color: $grey;
+            }
+
+            label {
+                z-index: 100;
+            }
+
+            .div-nav {
+                right: 0;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                right: -100%;
+                transition: 0.5s;
+            }
+
+            #burger:checked~.div-nav {
+                right: 0;
+            }
+
+            .div-nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .menu-bar {
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                color: #fff;
+                display: flex;
+                background-color: #000;
+                overflow: auto;
+            }
+
+            .contacts {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .contacts a {
+                line-height: 70px;
+                font-size: 30px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    main {
+        .hero {
+            margin-top: 60px;
+            width: 900px;
+            height: 500px;
+
+            .content {
+                flex-direction: column;
+
+                h1 {
+                    width: 850px;
+                    font-size: 44px;
+                    margin-top: 90px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    padding: 20px 0;
+                    font-size: 18px;
+
+                    i {
+                        padding: 0 8px;
+                    }
+                }
+
+                p {
+                    width: 650px;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+
+                .video {
+                    margin-top: 50px;
+                }
+
+
+            }
+        }
+
+        .boxes {
+            width: 700px;
+
+            .box {
+                margin: 50px 0;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .g {
+            margin-top: 50px;
+            margin: 0 auto;
+            rotate: -1deg;
+            margin-top: -30px;
+            width: 99.95%;
+            height: 100px;
+        }
+
+        .main {
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 18px;
+                padding-top: 40px;
+            }
+
+            .video {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    .cards {
+        margin-top: 100px;
+        width: 800px;
+
+        .card {
+            margin-top: 30px;
+            width: 385px;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            p {
+                font-size: 16px;
+            }
+
+            .profil {
+                width: 280px;
+                padding: 10px 30px;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .asosiy {
+                    width: 150px;
+
+                    h5 {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    .container {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav {
+        .none {
+            display: none;
+        }
+
+        .navbar {
+            width: 600px;
+            margin: 0 auto;
+
+            .unusefull {
+                display: block;
+            }
+
+            input {
+                display: none;
+            }
+
+            i {
+                font-size: 30px;
+                color: $grey;
+            }
+
+            label {
+                z-index: 100;
+            }
+
+            .div-nav {
+                right: 0;
+                position: fixed;
+                width: 100%;
+                top: 0;
+                bottom: 0;
+                right: -100%;
+                transition: 0.5s;
+            }
+
+            #burger:checked~.div-nav {
+                right: 0;
+            }
+
+            .div-nav {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .menu-bar {
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+                color: #fff;
+                display: flex;
+                background-color: #000;
+                overflow: auto;
+            }
+
+            .contacts {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .contacts a {
+                line-height: 70px;
+                font-size: 30px;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    main {
+        width: 768px;
+
+        .hero {
+            margin-top: 60px;
+            width: 768px;
+            height: 300px;
+
+            .content {
+                flex-direction: column;
+
+                h1 {
+                    width: 600px;
+                    font-size: 30px;
+                    margin-top: 40px;
+                }
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                h4 {
+                    padding: 20px 0;
+                    font-size: 18px;
+
+                    i {
+                        padding: 0 8px;
+                    }
+                }
+
+                p {
+                    max-width: 640px;
+                    width: 100%;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
+
+                .video {
+                    margin-top: 50px;
+                    width: 280px;
+                    height: 170px;
+                }
+
+
+            }
+        }
+
+        .boxes {
+            width: 650px;
+
+            .box {
+                margin: 30px 0;
+
+                h1 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .g {
+            margin-top: 50px;
+            margin: 0 auto;
+            rotate: -1deg;
+            margin-top: -30px;
+            width: 99.95%;
+            height: 100px;
+        }
+
+        .main {
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 18px;
+                padding-top: 40px;
+            }
+
+            .rasm {
+                width: 100%;
+                height: 370px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .cards {
+        margin-top: 100px;
+        width: 700px;
+        flex-direction: column;
+
+        .card {
+            margin-top: 30px;
+            width: 100%;
+            height: 280px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            p {
+                font-size: 16px;
+            }
+
+            .profil {
+                width: 280px;
+                padding: 10px 30px;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                }
+
+                .asosiy {
+                    width: 150px;
+
+                    h5 {
+                        font-size: 16px;
+                    }
+
+                    a {
+                        font-size: 14px;
+                    }
                 }
             }
         }
