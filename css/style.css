@@ -336,12 +336,16 @@ main .main .video {
 }
 @media (min-width: 769px) and (max-width: 900px) {
   .container {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
   }
   nav .none {
     display: none;
+  }
+  nav .navbar {
+    width: 700px;
+    margin: 0 auto;
   }
   nav .navbar .unusefull {
     display: block;
@@ -395,18 +399,21 @@ main .main .video {
     color: #fff;
     text-decoration: none;
   }
+  main {
+    width: 900px;
+  }
   main .hero {
     margin-top: 60px;
     width: 900px;
-    height: 500px;
+    height: 300px;
   }
   main .hero .content {
     flex-direction: column;
   }
   main .hero .content h1 {
-    width: 850px;
-    font-size: 44px;
-    margin-top: 90px;
+    width: 600px;
+    font-size: 30px;
+    margin-top: 40px;
   }
   main .hero .content h2 {
     font-size: 30px;
@@ -419,18 +426,21 @@ main .main .video {
     padding: 0 8px;
   }
   main .hero .content p {
-    width: 650px;
+    max-width: 640px;
+    width: 100%;
     font-size: 18px;
     margin-top: 20px;
   }
   main .hero .content .video {
     margin-top: 50px;
+    width: 280px;
+    height: 170px;
   }
   main .boxes {
-    width: 700px;
+    width: 650px;
   }
   main .boxes .box {
-    margin: 50px 0;
+    margin: 30px 0;
   }
   main .boxes .box h1 {
     font-size: 40px;
@@ -453,16 +463,19 @@ main .main .video {
     font-size: 18px;
     padding-top: 40px;
   }
-  main .main .video {
-    margin-top: 80px;
+  main .main .rasm {
+    width: 700px;
+    height: 370px;
+    margin-top: 50px;
   }
   .cards {
     margin-top: 100px;
-    width: 800px;
+    width: 700px;
+    flex-direction: column;
   }
   .cards .card {
     margin-top: 30px;
-    width: 385px;
+    width: 100%;
     height: 280px;
     display: flex;
     justify-content: center;
